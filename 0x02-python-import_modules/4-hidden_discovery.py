@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import decompile
+import hidden_4
 
-ownDir = dir(decompile)
+ownDir = dir(hidden_4)
 if __name__ == '__main__':
     filtered_dir = [name for name in ownDir if not name.startswith('__')]
     for i in range(len(filtered_dir)):
