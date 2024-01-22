@@ -1,10 +1,10 @@
 def safe_print_list(my_list=[], x=0):
     if my_list:
-        len = 0
+        length = 0
         for i in my_list:
-            len += 1
+            length += 1
         try:
-            if x <= len:
+            if x <= length:
                 for i in range(x):
                     print(my_list[i], end="")
                 print()
@@ -13,7 +13,7 @@ def safe_print_list(my_list=[], x=0):
                 for i in my_list:
                     print(i, end="")
                 print()
-                x = len
+                x = length
                 return x
         except Exception:
             print("An error occured")
