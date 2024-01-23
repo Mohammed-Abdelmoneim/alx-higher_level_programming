@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    if my_list:
+    #if my_list:
         length = 0
         for i in my_list:
             length += 1
@@ -18,5 +18,5 @@ def safe_print_list(my_list=[], x=0):
                 return x
         except Exception:
             print(Exception)
-    else:
-        return 0
+    #else:
+     #   return 0
