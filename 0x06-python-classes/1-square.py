@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Again simple class about square."""
 
+
 class Square:
     """Square class with size atrr.
-    
+
     Attributes:
         size (int): The square size.
     """
