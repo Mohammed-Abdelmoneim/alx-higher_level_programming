@@ -2,4 +2,5 @@
 
 class Square:
     """Normal Square class just to pass alx checker."""
+
     pass
