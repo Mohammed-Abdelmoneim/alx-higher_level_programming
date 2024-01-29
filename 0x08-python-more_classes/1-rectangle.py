@@ -15,8 +15,8 @@ class Rectangle:
             value (int): the size of a Rectangle.
         """
         self.__height = height
-        self.__width = width
         self.check_h()
+        self.__width = width
         self.check_w()
 
     def check_h(self):
@@ -29,13 +29,13 @@ class Rectangle:
         if type(self.__height) != int:
             raise TypeError("height must be an integer")
         elif self.__height < 0:
-            raise TypeError("height must be >= 0")
+            raise ValueError("height must be >= 0")
 
     def check_w(self):
         if type(self.__width) != int:
             raise TypeError("height must be an integer")
         elif self.__width < 0:
-            raise TypeError("height must be >= 0")
+            raise ValueError("height must be >= 0")
 
     @property
     def width(self):
