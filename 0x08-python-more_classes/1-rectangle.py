@@ -27,12 +27,12 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """
-        The sitter func
+        The setter func
 
         Parameters:
             value (int): The new value for the Rectangle.
         """
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise TypeError("width must be >= 0")
@@ -50,7 +50,7 @@ class Rectangle:
         Parameters:
             value (int): The new value for the Rectangle.
         """
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise TypeError("height must be >= 0")
