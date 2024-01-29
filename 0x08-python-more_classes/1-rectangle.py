@@ -21,7 +21,7 @@ class Rectangle:
 
     def check_h(self):
         """
-        The function to check on the size.
+        The function to check on the height.
 
         Returns:
             Rectangle: raises an error on if statements.
@@ -32,10 +32,16 @@ class Rectangle:
             raise ValueError("height must be >= 0")
 
     def check_w(self):
+        """
+        The function to check on the width.
+
+        Returns:
+            Rectangle: raises an error on if statements.
+        """
         if type(self.__width) != int:
-            raise TypeError("height must be an integer")
+            raise TypeError("width must be an integer")
         elif self.__width < 0:
-            raise ValueError("height must be >= 0")
+            raise ValueError("width must be >= 0")
 
     @property
     def width(self):
