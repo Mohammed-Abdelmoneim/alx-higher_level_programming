@@ -18,6 +18,12 @@ class Rectangle:
         self.__width = width
 
     def check_h(self):
+        """
+        The function to check on the size.
+
+        Returns:
+            Rectangle: raises an error on if statements.
+        """
         if type(self.__height) != int:
             raise TypeError("height must be an integer")
         elif self.__height < 0:
@@ -35,7 +41,7 @@ class Rectangle:
         The getter func
 
         Returns:
-            square: The size of the rectungle.
+            Rectangle: The size of the rectungle.
         """
         return self.__width
 
@@ -56,7 +62,7 @@ class Rectangle:
         The getter func
 
         Returns:
-            square: The size of the rec.
+            Rectangle: The size of the rec.
         """
         return self.__height
 
