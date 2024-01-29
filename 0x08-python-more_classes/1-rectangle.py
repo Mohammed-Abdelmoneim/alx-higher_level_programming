@@ -16,6 +16,8 @@ class Rectangle:
         """
         self.__height = height
         self.__width = width
+        self.check_h
+        self.check_w
 
     def check_h(self):
         """
