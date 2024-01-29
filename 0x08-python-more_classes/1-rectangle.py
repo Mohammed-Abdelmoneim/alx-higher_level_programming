@@ -13,7 +13,7 @@ class Rectangle:
         """
         self.__height = height
         self.__width = width
-
+    
     @property
     def width(self):
         """
@@ -32,11 +32,11 @@ class Rectangle:
         Parameters:
             value (int): The new value for the Rectangle.
         """
-        if type(value) != int:
-            raise TypeError("width must be an integer")
-        elif value < 0:
-            raise TypeError("width must be >= 0")
         self.__width = value
+        if type(self.__width) != int:
+            raise TypeError("height must be an integer")
+        elif value < 0:
+            raise TypeError("height must be >= 0")
 
     @property
     def height(self):
@@ -50,8 +50,8 @@ class Rectangle:
         Parameters:
             value (int): The new value for the Rectangle.
         """
-        if type(value) != int:
+        self.__height = value
+        if type(self.__height) != int:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise TypeError("height must be >= 0")
-        self.__height = value
