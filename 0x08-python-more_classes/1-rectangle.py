@@ -35,7 +35,7 @@ class Rectangle:
         self.__width = value
         if type(self.__width) != int:
             raise TypeError("height must be an integer")
-        elif self.__height < 0:
+        elif self.__width < 0:
             raise TypeError("height must be >= 0")
 
     @property
@@ -45,7 +45,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """
-        The sitter func
+        The setter func
 
         Parameters:
             value (int): The new value for the Rectangle.
