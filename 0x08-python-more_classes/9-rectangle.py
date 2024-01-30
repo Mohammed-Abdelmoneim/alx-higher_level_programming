@@ -22,7 +22,7 @@ class Rectangle:
         self.check_h()
         self.__width = width
         self.check_w()
-        Rectangle.number_of_instances += 1
+        type(self).number_of_instances += 1
 
     def check_h(self):
         """
@@ -144,6 +144,6 @@ class Rectangle:
         Return a new rec class.
 
         Args:
-            size (int): The size of the rec.        
+            size (int): The size of the rec.
         """
         return (cls(size, size))
