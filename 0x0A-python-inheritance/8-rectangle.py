@@ -1,25 +1,6 @@
 #!/usr/bin/python3
 """Simple class module."""
-
-
-class BaseGeometry(object):
-    """
-    Basic BaseGeometry empty class.
-    """
-    def area(self):
-        """
-        Raises an exception with message.
-        """
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """
-        Check the value.
-        """
-        if type(value) != int:
-            raise TypeError("{} must be an integer".format(name))
-        elif value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
@@ -34,4 +15,3 @@ class Rectangle(BaseGeometry):
         self.__height = height
         self.integer_validator("width", self.__width)
         self.integer_validator("height", self.__height)
-        super().__init__()

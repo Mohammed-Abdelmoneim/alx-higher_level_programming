@@ -2,7 +2,7 @@
 """Simple class module."""
 
 
-class BaseGeometry:
+class BaseGeometry(object):
     """
     Basic BaseGeometry empty class.
     """
